@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meghana Acharya — Web Developer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M<span>.</span>Acharya</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="login.html" class="nav-cta">Login</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">Developer</div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-name">Meghana<br>Acharya</h1>
+        <p class="hero-title">Web Developer &amp; UI Enthusiast</p>
+        <p class="hero-desc">
+          I craft clean, responsive, and user-centered web experiences — blending thoughtful design with robust code to bring ideas to life.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-folder-open"></i> View Projects
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <a href="#" class="btn btn-accent btn-lg" onclick="showToast('Resume download (UI only)'); return false;">
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <div class="hero-image-placeholder">
+            <i class="fas fa-user"></i>
+            <span>Meghana Acharya</span>
+          </div>
+          <div class="hero-badge">
+            <div class="hero-badge-num" data-count="3">3</div>
+            <div class="hero-badge-text">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT PREVIEW -->
+  <section class="about-preview" id="about">
+    <div class="container">
+      <div class="about-preview-inner">
+        <div class="about-preview-img reveal">
+          <div class="img-box">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num" data-count="12">12</div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="6">6</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="5">5</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="3">3</div>
+              <div class="stat-label">Years Learning</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Passionate about crafting <em>digital experiences</em></h2>
+          <p>
+            I'm Meghana Acharya, a dedicated Web Developer with a strong foundation in both front-end and back-end technologies. I love turning ideas into functional, elegant web applications.
+          </p>
+          <p style="margin-top:1rem;">
+            My journey started with a curiosity for how the web works — and it quickly grew into a deep passion for building things that are both beautiful and purposeful.
+          </p>
+          <div style="margin-top:2rem;">
+            <a href="about.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS PREVIEW -->
+  <section class="skills-preview" id="skills">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">What I Know</span>
+        <h2 class="section-title">My <em>Core Skills</em></h2>
+        <p style="max-width:520px;margin:0 auto;color:var(--text-muted);">
+          A curated toolkit of technologies I use to build modern, performant web applications.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card card reveal reveal-delay-1">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <p>Semantic & accessible markup</p>
+        </div>
+        <div class="skill-card card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <p>Responsive layouts & animations</p>
+        </div>
+        <div class="skill-card card reveal reveal-delay-3">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <p>Interactive web experiences</p>
+        </div>
+        <div class="skill-card card reveal reveal-delay-1">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <h4>React</h4>
+          <p>Component-based UI development</p>
+        </div>
+        <div class="skill-card card reveal reveal-delay-2">
+          <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+          <h4>Laravel</h4>
+          <p>Backend PHP framework</p>
+        </div>
+        <div class="skill-card card reveal reveal-delay-3">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>MySQL</h4>
+          <p>Relational database management</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="skills.html" class="btn btn-outline">View All Skills <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS PREVIEW -->
+  <section class="projects-preview" id="projects">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">Featured Work</span>
+        <h2 class="section-title">Recent <em>Projects</em></h2>
+        <p style="max-width:480px;margin:0 auto;color:var(--text-muted);">
+          A selection of projects that showcase my skills and creative approach to problem-solving.
+        </p>
+      </div>
+      <div class="projects-grid mt-4">
+        <div class="project-card card reveal reveal-delay-1">
+          <div class="project-card-img" style="background:linear-gradient(135deg,#E8E0D5,#C4A882);">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="project-card-body">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured online store with product catalog, cart, and order management.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card reveal reveal-delay-2">
+          <div class="project-card-img" style="background:linear-gradient(135deg,#C4A882,#9B6B4B);">
+            <i class="fas fa-tasks"></i>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Task Management App</h3>
+            <p>A clean productivity app with drag-and-drop tasks, deadlines, and team collaboration.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card reveal reveal-delay-3">
+          <div class="project-card-img" style="background:linear-gradient(135deg,#9B6B4B,#3D2B1F);">
+            <i class="fas fa-blog"></i>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Blog CMS</h3>
+            <p>A content management system with rich text editing, categories, and SEO tools.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JS</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="projects.html" class="btn btn-outline">View All Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EDUCATION -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Education <em>Timeline</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-year">2020 – 2024</div>
+          <div class="timeline-card">
+            <h4>Bachelor of Engineering — Computer Science</h4>
+            <p class="institution">KLE Technological University, Hubli</p>
+            <p>Studied core computer science subjects including Data Structures, DBMS, Web Technologies, Operating Systems, and Software Engineering. Graduated with distinction.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-year">2018 – 2020</div>
+          <div class="timeline-card">
+            <h4>Pre-University Education — PCMCS</h4>
+            <p class="institution">Govt. PU College, Dharwad</p>
+            <p>Completed PUC with Physics, Chemistry, Mathematics, and Computer Science. Secured 92% aggregate.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-year">2017 – 2018</div>
+          <div class="timeline-card">
+            <h4>Secondary School — SSLC</h4>
+            <p class="institution">St. Joseph's High School, Hubli</p>
+            <p>Completed SSLC with a 94% aggregate. Participated in science exhibitions and coding competitions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CERTIFICATES -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">Achievements</span>
+        <h2 class="section-title">Certificates &amp; <em>Credentials</em></h2>
+      </div>
+      <div class="cert-grid mt-4">
+        <div class="cert-card card reveal reveal-delay-1">
+          <div class="cert-img" style="background:linear-gradient(135deg,#E8E0D5,#C4A882);">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="cert-body">
+            <h4>React — The Complete Guide</h4>
+            <span>Udemy · 2023</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal reveal-delay-2">
+          <div class="cert-img" style="background:linear-gradient(135deg,#C4A882,#9B6B4B);">
+            <i class="fab fa-laravel"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Laravel Framework Mastery</h4>
+            <span>Coursera · 2023</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal reveal-delay-3">
+          <div class="cert-img" style="background:linear-gradient(135deg,#9B6B4B,#7A5239);">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Web Development Bootcamp</h4>
+            <span>freeCodeCamp · 2022</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal reveal-delay-1">
+          <div class="cert-img" style="background:linear-gradient(135deg,#7A5239,#3D2B1F);">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="cert-body">
+            <h4>MySQL for Beginners to Pro</h4>
+            <span>Udemy · 2022</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal reveal-delay-2">
+          <div class="cert-img" style="background:linear-gradient(135deg,#E8E0D5,#9B6B4B);">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Cybersecurity Fundamentals</h4>
+            <span>IBM SkillsBuild · 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="reveal">
+          <span class="section-label">Say Hello</span>
+          <h2 class="section-title">Let's <em>Work Together</em></h2>
+          <p style="color:var(--text-muted);margin-bottom:2rem;">
+            Have a project in mind or just want to chat? I'd love to hear from you. Fill out the form and I'll get back to you soon.
+          </p>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>meghana.acharya@email.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Hubli, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form">
+            <form data-contact>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Meghana Acharya" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="meghana@email.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">M<span>.</span>Acharya</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Meghana Acharya. Designed &amp; built with <i class="fas fa-heart" style="color:var(--clay);"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

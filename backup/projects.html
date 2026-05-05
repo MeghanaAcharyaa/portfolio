@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Meghana Acharya</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">M<span>.</span>Acharya</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="login.html" class="nav-cta">Login</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">My Work</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.8rem);margin-top:0.5rem;">Featured <em>Projects</em></h1>
+      <p style="color:var(--text-muted);max-width:520px;margin:1rem auto 0;">
+        A collection of projects I've built — from e-commerce platforms to productivity tools, each reflecting my passion for clean, functional web development.
+      </p>
+    </div>
+  </div>
+
+  <section class="projects-full">
+    <div class="container">
+
+      <!-- FILTER -->
+      <div class="projects-filter reveal">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Frontend</button>
+        <button class="filter-btn">Full Stack</button>
+        <button class="filter-btn">React</button>
+        <button class="filter-btn">Laravel</button>
+      </div>
+
+      <div class="projects-full-grid">
+
+        <!-- Project 1 -->
+        <div class="project-full-card card reveal reveal-delay-1">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#E8E0D5 0%,#C4A882 100%);">
+            <i class="fas fa-shopping-cart" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>E-Commerce Platform</h3>
+            <p>A complete online store built with Laravel and MySQL featuring product catalog, shopping cart, order management, admin dashboard, and Stripe-ready payment integration. Includes user authentication, product reviews, and inventory tracking.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Blade</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">jQuery</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-full-card card reveal reveal-delay-2">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#C4A882 0%,#9B6B4B 100%);">
+            <i class="fas fa-tasks" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Task Management App</h3>
+            <p>A drag-and-drop Kanban board for managing projects and tasks. Built in React with useReducer for state management. Features task creation, deadlines, priority levels, team assignment, and local storage persistence.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-full-card card reveal reveal-delay-3">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#9B6B4B 0%,#3D2B1F 100%);">
+            <i class="fas fa-blog" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Blog CMS</h3>
+            <p>A full-featured content management system with rich text editing (Quill.js), category management, SEO optimization, comment moderation, social sharing, and a custom admin dashboard with analytics.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Quill.js</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-full-card card reveal reveal-delay-1">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#E8E0D5 0%,#9B6B4B 100%);">
+            <i class="fas fa-user-friends" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Student Portal System</h3>
+            <p>A college student portal with course enrollment, grade tracking, attendance records, announcements, and faculty communication features. Includes role-based access control for students, faculty, and admins.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-full-card card reveal reveal-delay-2">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#3D2B1F 0%,#7A5239 100%);">
+            <i class="fas fa-cloud-sun" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Weather Dashboard</h3>
+            <p>A beautiful real-time weather app using the OpenWeatherMap API. Features current conditions, 7-day forecast, location search, saved favorites, and animated weather icons with dark/light theme toggle.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">REST API</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Axios</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-full-card card reveal reveal-delay-3">
+          <div class="project-full-img" style="background:linear-gradient(135deg,#C4A882 0%,#3D2B1F 100%);">
+            <i class="fas fa-chart-line" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary" onclick="return false;"><i class="fas fa-eye"></i> Demo</a>
+              <a href="#" class="btn btn-sm btn-outline" style="color:white;border-color:white;" onclick="return false;"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Finance Tracker</h3>
+            <p>A personal finance management app with income/expense tracking, budget categories, monthly reports, CSV export, and interactive Chart.js visualizations. Data persists via Laravel backend with user authentication.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">Vue.js</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" onclick="showToast('Live demo coming soon!'); return false;">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline" onclick="showToast('Source code on GitHub (UI only)'); return false;">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--warm-white);padding:4rem 0;text-align:center;">
+    <div class="container reveal">
+      <h2 style="font-size:2rem;margin-bottom:1rem;">Have a project in mind?</h2>
+      <p style="color:var(--text-muted);max-width:440px;margin:0 auto 2rem;">
+        I'm always open to discussing new ideas, collaborations, or freelance opportunities.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">M<span>.</span>Acharya</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Meghana Acharya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Filter buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

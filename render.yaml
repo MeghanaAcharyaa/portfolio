@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: portfolio
+    runtime: php
+    buildCommand: ./build.sh
+    # Render's PHP runtime uses Apache. We need to point it to the public directory.
+    # You can also set this in the Render Dashboard under 'Web Server Root'.
+    startCommand: cp public/.htaccess . && apache2-foreground
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_URL
+        value: https://your-app-name.onrender.com # Change this later
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DATABASE_URL
+        fromDatabase:
+          name: portfolio-db
+          property: connectionString
+
+databases:
+  - name: portfolio-db
+    plan: free

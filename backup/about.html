@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Meghana Acharya</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Meghana<span>.</span>Acharya</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="login.html" class="nav-cta">Login</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">Get to Know Me</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.8rem);margin-top:0.5rem;">About <em>Me</em></h1>
+      <p style="color:var(--text-muted);max-width:480px;margin:1rem auto 0;">
+        A passionate developer crafting elegant web experiences from Hubli, India.
+      </p>
+    </div>
+  </div>
+
+  <!-- ABOUT FULL -->
+  <section class="about-full">
+    <div class="container">
+      <div class="about-full-inner">
+
+        <!-- SIDEBAR -->
+        <aside class="about-sidebar reveal">
+          <div class="profile-card">
+            <div class="profile-card-img">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="profile-card-info">
+              <h3>Meghana Acharya</h3>
+              <p class="role">Web Developer</p>
+              <div class="profile-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Udupi, Karnataka, India</span>
+              </div>
+              <div class="profile-detail">
+                <i class="fas fa-envelope"></i>
+                <span>meghana.acharya@email.co</span>
+              </div>
+              <div class="profile-detail">
+                <i class="fas fa-phone"></i>
+                <span>+91 98765 43210</span>
+              </div>
+              <div class="profile-detail">
+                <i class="fas fa-graduation-cap"></i>
+                <span>B.E. Computer Science</span>
+              </div>
+              <div class="profile-detail">
+                <i class="fas fa-calendar"></i>
+                <span>Available for Opportunities</span>
+              </div>
+              <div style="margin-top:1.5rem;">
+                <a href="#" class="btn btn-primary" style="width:100%;justify-content:center;"
+                   onclick="showToast('Resume download (UI only)'); return false;">
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+              </div>
+              <div style="margin-top:1rem;">
+                <div class="social-icons" style="justify-content:center;">
+                  <a href="#" class="social-icon" style="background:rgba(155,107,75,0.1);border-color:rgba(155,107,75,0.2);color:var(--accent);">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="social-icon" style="background:rgba(155,107,75,0.1);border-color:rgba(155,107,75,0.2);color:var(--accent);">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-icon" style="background:rgba(155,107,75,0.1);border-color:rgba(155,107,75,0.2);color:var(--accent);">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Skills -->
+          <div style="margin-top:1.5rem;" class="card" style="padding:1.5rem;">
+            <div style="padding:1.5rem;">
+              <h4 style="margin-bottom:1rem;font-size:1rem;">Quick Skills</h4>
+              <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- CONTENT -->
+        <main class="about-content">
+          <div class="about-section reveal">
+            <h3>Career Objective</h3>
+            <div class="divider" style="margin:0 0 1.2rem;"></div>
+            <p>
+              To leverage my expertise in full-stack web development to build scalable, user-centric applications that solve real-world problems. I aim to grow as a developer by working on challenging projects that push the boundaries of modern web technology, while contributing positively to the teams and organizations I work with.
+            </p>
+            <p>
+              I am particularly passionate about the intersection of great design and clean code — believing that the best web applications are both technically sound and delightfully intuitive to use.
+            </p>
+          </div>
+
+          <div class="about-section reveal">
+            <h3>Who I Am</h3>
+            <div class="divider" style="margin:0 0 1.2rem;"></div>
+            <p>
+              Hello! I'm Meghana Acharya, a Web Developer based in Hubli, Karnataka. I graduated with a Bachelor of Engineering in Computer Science from KLE Technological University in 2024. My journey into web development began in my second year of college when I built my first website — a simple blog — and fell in love with the process.
+            </p>
+            <p>
+              Since then, I've dedicated myself to mastering the craft of web development, from semantic HTML and responsive CSS to complex React applications and robust Laravel backends. I believe that every great website is built on a foundation of clean, purposeful code paired with thoughtful design decisions.
+            </p>
+            <p>
+              Outside of coding, I enjoy reading about UX design principles, contributing to open-source projects, and mentoring junior students in web technologies.
+            </p>
+          </div>
+
+          <div class="about-section reveal">
+            <h3>Learning Journey</h3>
+            <div class="divider" style="margin:0 0 1.2rem;"></div>
+            <p>
+              My learning has been a blend of formal education and self-directed exploration. During college, I built a strong foundation in computer science fundamentals. Outside the classroom, I completed certifications in React, Laravel, and MySQL — applying each new skill to real projects.
+            </p>
+            <p>
+              I believe in learning by building. Each project has taught me something new — whether it was how to optimize database queries, structure a React component hierarchy, or implement secure authentication flows in Laravel.
+            </p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;">
+              <div class="card" style="padding:1.2rem;">
+                <i class="fas fa-code" style="color:var(--accent);font-size:1.2rem;margin-bottom:0.6rem;"></i>
+                <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Frontend</h4>
+                <p style="font-size:0.82rem;color:var(--text-muted);">HTML, CSS, JavaScript, React, Tailwind CSS</p>
+              </div>
+              <div class="card" style="padding:1.2rem;">
+                <i class="fas fa-server" style="color:var(--accent);font-size:1.2rem;margin-bottom:0.6rem;"></i>
+                <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Backend</h4>
+                <p style="font-size:0.82rem;color:var(--text-muted);">Laravel, PHP, Node.js basics, REST APIs</p>
+              </div>
+              <div class="card" style="padding:1.2rem;">
+                <i class="fas fa-database" style="color:var(--accent);font-size:1.2rem;margin-bottom:0.6rem;"></i>
+                <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Database</h4>
+                <p style="font-size:0.82rem;color:var(--text-muted);">MySQL, SQLite, database design</p>
+              </div>
+              <div class="card" style="padding:1.2rem;">
+                <i class="fas fa-tools" style="color:var(--accent);font-size:1.2rem;margin-bottom:0.6rem;"></i>
+                <h4 style="font-size:0.95rem;margin-bottom:0.3rem;">Tools</h4>
+                <p style="font-size:0.82rem;color:var(--text-muted);">Git, VS Code, Figma, Postman</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-section reveal">
+            <h3>What I Value</h3>
+            <div class="divider" style="margin:0 0 1.2rem;"></div>
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <div style="width:36px;height:36px;background:rgba(196,168,130,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i class="fas fa-star" style="color:var(--accent);font-size:0.85rem;"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:0.95rem;margin-bottom:0.2rem;">Clean, Maintainable Code</h4>
+                  <p style="font-size:0.85rem;color:var(--text-muted);">I write code that is readable, well-documented, and easy for teams to maintain.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <div style="width:36px;height:36px;background:rgba(196,168,130,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i class="fas fa-users" style="color:var(--accent);font-size:0.85rem;"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:0.95rem;margin-bottom:0.2rem;">User-Centered Design</h4>
+                  <p style="font-size:0.85rem;color:var(--text-muted);">Every feature I build starts with asking how it serves the person who will use it.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:1rem;align-items:flex-start;">
+                <div style="width:36px;height:36px;background:rgba(196,168,130,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i class="fas fa-sync" style="color:var(--accent);font-size:0.85rem;"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:0.95rem;margin-bottom:0.2rem;">Continuous Learning</h4>
+                  <p style="font-size:0.85rem;color:var(--text-muted);">The web evolves fast — I stay current through courses, projects, and community engagement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;" class="reveal">
+            <a href="contact.html" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+            <a href="projects.html" class="btn btn-outline">See My Work</a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">M<span>.</span>Acharya</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Meghana Acharya. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
