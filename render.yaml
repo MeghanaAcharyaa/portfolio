@@ -1,9 +1,7 @@
 services:
   - type: web
     name: portfolio
-    runtime: php
-    buildCommand: ./build.sh
-    startCommand: cp public/.htaccess . && apache2-foreground
+    runtime: docker
     envVars:
       - key: APP_ENV
         value: production
