@@ -28,6 +28,9 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
+# Set up environment and database for build
+RUN cp .env.example .env && touch database/database.sqlite
+
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
