@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meghana Acharya — Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Meghana<span> </span>Acharya</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════ HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">Developer</div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-name">Meghana<br>Acharya</h1>
+        <p class="hero-title">Web Developer</p>
+        <p class="hero-desc">
+          I craft clean, responsive, and user-centered web experiences — blending thoughtful design with robust code to
+          bring ideas to life.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-folder-open"></i> View Projects
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <div style="display:inline-flex;gap:0.5rem;align-items:center;">
+            <a href="assets/Meghana_Acharya_Resume.pdf" target="_blank" class="btn btn-accent btn-sm"
+              style="padding:0.7rem 1.2rem;">
+              <i class="fas fa-eye"></i> View Resume
+            </a>
+            <a href="assets/Meghana_Acharya_Resume.pdf" download class="btn btn-outline btn-sm"
+              style="padding:0.7rem 1.2rem;">
+              <i class="fas fa-download"></i> Download
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img src="assets/images/profile.jpg" alt="Meghana Acharya" class="hero-image">
+          <div class="hero-badge">
+            <div class="hero-badge-num"><i class="fas fa-graduation-cap"></i></div>
+            <div class="hero-badge-text">Computer Science Student</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ ABOUT PREVIEW -->
+  <section class="about-preview" id="about">
+    <div class="container">
+      <div class="about-preview-inner">
+        <div class="about-preview-img reveal">
+          <div class="img-box">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-num" data-count="12">12</div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="6">6</div>
+              <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="5">5</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">New</div>
+              <div class="stat-label">Years of Study</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-2">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Passionate about crafting <em>digital experiences</em></h2>
+          <p>
+            I am a dedicated Web Developer with a strong foundation in both front-end and back-end technologies. I enjoy
+            solving complex problems and turning ideas into functional, beautiful realities.
+          </p>
+          <div style="margin-top:2rem;">
+            <a href="about.html" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ SKILLS PREVIEW -->
+  <section class="skills-preview" id="skills">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">What I Know</span>
+        <h2 class="section-title">My <em>Core Skills</em></h2>
+        <p style="max-width:520px;margin:0 auto;color:var(--text-muted);">
+          A curated toolkit of technologies I use to build modern, performant web applications.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card card reveal">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h4>HTML5 & CSS3</h4>
+          <p>Building semantic structure and responsive layouts.</p>
+        </div>
+        <div class="skill-card card reveal" style="transition-delay: 0.1s;">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <p>Creating interactive and dynamic user experiences.</p>
+        </div>
+        <div class="skill-card card reveal" style="transition-delay: 0.2s;">
+          <div class="skill-icon"><i class="fab fa-php"></i></div>
+          <h4>PHP & Laravel</h4>
+          <p>Developing robust server-side logic and APIs.</p>
+        </div>
+        <div class="skill-card card reveal" style="transition-delay: 0.3s;">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h4>MySQL</h4>
+          <p>Designing and managing relational databases.</p>
+        </div>
+        <div class="skill-card card reveal" style="transition-delay: 0.4s;">
+          <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+          <h4>Bootstrap</h4>
+          <p>Rapidly prototyping with modern UI components.</p>
+        </div>
+        <div class="skill-card card reveal" style="transition-delay: 0.5s;">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <h4>Version Control</h4>
+          <p>Managing code efficiently with Git and GitHub.</p>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="skills.html" class="btn btn-outline">View All Skills <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ PROJECTS PREVIEW -->
+  <section class="projects-preview" id="projects">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">Featured Work</span>
+        <h2 class="section-title">Recent <em>Projects</em></h2>
+        <p style="max-width:480px;margin:0 auto;color:var(--text-muted);">
+          A selection of projects that showcase my skills and creative approach to problem-solving.
+        </p>
+      </div>
+      <div class="projects-grid mt-4">
+        <div class="project-card card reveal">
+          <div class="project-card-img">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="proj-num">01</span>
+          </div>
+          <div class="project-card-body">
+            <h3>M-Kart E-commerce</h3>
+            <p>A full-featured boutique e-commerce platform with a focus on luxury aesthetics.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card reveal" style="transition-delay: 0.1s;">
+          <div class="project-card-img">
+            <i class="fas fa-user-tie"></i>
+            <span class="proj-num">02</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Personal Portfolio</h3>
+            <p>A professional portfolio website designed to showcase skills and achievements.</p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JS</span>
+              <span class="tag">PHP</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card card reveal" style="transition-delay: 0.2s;">
+          <div class="project-card-img">
+            <i class="fas fa-tasks"></i>
+            <span class="proj-num">03</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Task Manager App</h3>
+            <p>An intuitive application for managing daily tasks and productivity efficiently.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="projects.html" class="btn btn-sm btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="projects.html" class="btn btn-outline">View All Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ EDUCATION -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Education <em>Timeline</em></h2>
+      </div>
+      <div class="timeline">
+        <!-- Education Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-year">2022 - PRESENT</div>
+          <div class="timeline-card">
+            <h4>Bachelor of Technology — Computer Science</h4>
+            <p class="institution">Srinivas University</p>
+            <p>Maintaining an 8.53 CGPA while specializing in software engineering and modern web technologies.</p>
+          </div>
+        </div>
+        <!-- Education Item 2 -->
+        <div class="timeline-item reveal" style="transition-delay: 0.1s;">
+          <div class="timeline-year">2021 - 2022</div>
+          <div class="timeline-card">
+            <h4>Pre-University Education — PCMB</h4>
+            <p class="institution">S.M.S Pre-University College, Udupi</p>
+            <p>Completed PUC with a focus on Physics, Chemistry, Mathematics, and Biology.</p>
+          </div>
+        </div>
+        <!-- Education Item 3 -->
+        <div class="timeline-item reveal" style="transition-delay: 0.2s;">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-card">
+            <h4>Secondary School — SSLC</h4>
+            <p class="institution">S.M.S English Medium School Brahmavara</p>
+            <p>Completed SSLC in CBSE curriculum with excellence.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CERTIFICATES -->
+  <section class="certificates" id="certificates">
+    <div class="container">
+      <div class="text-center reveal">
+        <span class="section-label" style="justify-content:center;">Achievements</span>
+        <h2 class="section-title">Certificates &amp; <em>Credentials</em></h2>
+      </div>
+      <div class="cert-grid mt-4">
+        <div class="cert-card card reveal">
+          <div class="cert-img">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Web Development Bootcamp</h4>
+            <span>Udemy · 2023</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal" style="transition-delay: 0.05s;">
+          <div class="cert-img">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Java Programming</h4>
+            <span>NPTEL · 2023</span>
+          </div>
+        </div>
+        <div class="cert-card card reveal" style="transition-delay: 0.1s;">
+          <div class="cert-img">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="cert-body">
+            <h4>Database Management</h4>
+            <span>Coursera · 2022</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <span class="section-label" style="justify-content: center;">Say Hello</span>
+        <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 1rem;">Let's <em>Work
+            Together</em></h2>
+        <p
+          style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.1rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          I am currently seeking full-time software development opportunities and internships. If you are looking for a
+          dedicated and passionate developer to join your team, I'd love to connect!
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+          <!-- EMAIL -->
+          <div
+            style="display: flex; align-items: center; gap: 1.5rem; text-align: left; width: 100%; max-width: 320px;">
+            <div
+              style="width: 56px; height: 56px; background: #F1ECE4; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #8B6B4D; flex-shrink: 0;">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4
+                style="font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.3rem;">
+                Email</h4>
+              <p style="font-size: 1rem; color: var(--espresso); font-weight: 500;">meghanaashok.cse@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- LOCATION -->
+          <div
+            style="display: flex; align-items: center; gap: 1.5rem; text-align: left; width: 100%; max-width: 320px;">
+            <div
+              style="width: 56px; height: 56px; background: #F1ECE4; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #8B6B4D; flex-shrink: 0;">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4
+                style="font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.3rem;">
+                Location</h4>
+              <p style="font-size: 1rem; color: var(--espresso); font-weight: 500;">Udupi, Karnataka, India — 576215</p>
+            </div>
+          </div>
+
+          <!-- PHONE -->
+          <div
+            style="display: flex; align-items: center; gap: 1.5rem; text-align: left; width: 100%; max-width: 320px;">
+            <div
+              style="width: 56px; height: 56px; background: #F1ECE4; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #8B6B4D; flex-shrink: 0;">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4
+                style="font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.3rem;">
+                Phone</h4>
+              <p style="font-size: 1rem; color: var(--espresso); font-weight: 500;">+91 9900459722</p>
+            </div>
+          </div>
+
+          <!-- AVAILABILITY -->
+          <div
+            style="display: flex; align-items: center; gap: 1.5rem; text-align: left; width: 100%; max-width: 320px;">
+            <div
+              style="width: 56px; height: 56px; background: #F1ECE4; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #8B6B4D; flex-shrink: 0;">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4
+                style="font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.3rem;">
+                Availability</h4>
+              <p style="font-size: 1rem; color: var(--espresso); font-weight: 500;">Mon – Fri, 9:00 AM – 6:00 PM IST</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Meghana<span> </span>Acharya</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://github.com/MeghanaAcharyaa" target="_blank" class="social-icon"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/meghana-acharya-a09548289" target="_blank" class="social-icon"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:meghanaashok.cse@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Meghana Acharya. d/o Ashok Acharya. Designed &amp; built with <i class="fas fa-heart"
+            style="color:var(--clay);"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

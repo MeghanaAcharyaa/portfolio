@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Meghana Acharya</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Meghana<span> </span>Acharya</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-label">My Work</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.8rem);margin-top:0.5rem;">Featured <em>Projects</em></h1>
+      <p style="color:var(--text-muted);max-width:520px;margin:1rem auto 0;">
+        A collection of projects I've built — from e-commerce platforms to productivity tools, each reflecting my passion for clean, functional web development.
+      </p>
+    </div>
+  </div>
+
+  <section class="projects-full">
+    <div class="container">
+
+      <!-- FILTER -->
+      <div class="projects-filter reveal">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Frontend</button>
+        <button class="filter-btn">Full Stack</button>
+        <button class="filter-btn">React</button>
+        <button class="filter-btn">Laravel</button>
+      </div>
+
+      <div class="projects-full-grid">
+        <div class="project-full-card card reveal" data-category="Full Stack, Laravel">
+          <div class="project-full-img">
+            <i class="fas fa-shopping-cart" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>M-Kart E-commerce</h3>
+            <p>A full-featured boutique e-commerce platform with a focus on luxury aesthetics.</p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-full-card card reveal" style="transition-delay: 0.1s;" data-category="Frontend">
+          <div class="project-full-img">
+            <i class="fas fa-user-tie" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Personal Portfolio</h3>
+            <p>A professional portfolio website designed to showcase skills and achievements.</p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JS</span>
+              <span class="tag">PHP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-full-card card reveal" style="transition-delay: 0.2s;" data-category="Frontend">
+          <div class="project-full-img">
+            <i class="fas fa-tasks" style="font-size:3.5rem;color:rgba(255,255,255,0.4);"></i>
+            <div class="overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-eye"></i> Demo</a>
+            </div>
+          </div>
+          <div class="project-full-body">
+            <h3>Task Manager App</h3>
+            <p>An intuitive application for managing daily tasks and productivity efficiently.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--warm-white);padding:4rem 0;text-align:center;">
+    <div class="container reveal">
+      <h2 style="font-size:2rem;margin-bottom:1rem;">Have a project in mind?</h2>
+      <p style="color:var(--text-muted);max-width:440px;margin:0 auto 2rem;">
+        I'm always open to discussing new ideas, collaborations, or freelance opportunities.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Meghana<span> </span>Acharya</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://github.com/MeghanaAcharyaa" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/meghana-acharya-a09548289" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:meghanaashok.cse@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Meghana Acharya. d/o Ashok Acharya. Designed &amp; built with <i class="fas fa-heart" style="color:var(--clay);"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Filter logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-full-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const filter = this.textContent.trim().toLowerCase();
+        
+        // Update active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Filter cards
+        projectCards.forEach(card => {
+          const categories = card.getAttribute('data-category').toLowerCase();
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'block';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
