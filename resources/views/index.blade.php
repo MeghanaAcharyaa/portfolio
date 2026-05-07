@@ -33,12 +33,11 @@
       </div>
       <div class="hero-image-wrap">
         <div class="hero-image-frame">
-          <div class="hero-image-placeholder" style="{{ ($profile && $profile->photo_hero) ? 'background:url('.asset('storage/'.$profile->photo_hero).');background-size:cover;background-position:center;border:none;' : '' }}">
-            @if(!($profile && $profile->photo_hero))
-            <i class="fas fa-user"></i>
-            <span>Meghana Acharya</span>
-            @endif
-          </div>
+          @if($profile && $profile->photo_hero)
+          <div class="hero-image-placeholder" style="background:url('{{ asset('storage/'.$profile->photo_hero) }}');background-size:cover;background-position:center;border:none;"></div>
+          @else
+          <img src="{{ asset('assets/images/profile.jpg') }}" alt="Meghana Acharya" class="hero-image">
+          @endif
           <div class="hero-badge">
             <div class="hero-badge-num"><i class="fas fa-graduation-cap"></i></div>
             <div class="hero-badge-text">Computer Science Student</div>
