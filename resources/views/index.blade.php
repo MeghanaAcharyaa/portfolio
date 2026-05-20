@@ -71,8 +71,8 @@
               <div class="stat-label">Certificates</div>
             </div>
             <div class="stat-item">
-              <div class="stat-num">New</div>
-              <div class="stat-label">Years of Study</div>
+              <div class="stat-num">6</div>
+              <div class="stat-label">Months Experience</div>
             </div>
           </div>
         </div>
