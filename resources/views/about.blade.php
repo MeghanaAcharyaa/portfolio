@@ -53,10 +53,10 @@
                 </div>
               </div>
               <div style="margin-top:1.5rem;display:flex;flex-direction:column;gap:0.7rem;">
-                <a href="{{ asset('Meghana_Acharya_Resume.pdf') }}" target="_blank" class="btn btn-primary" style="justify-content:center;">
+                <a href="{{ asset('Meghana_Acharya_Resume_2026.pdf') }}" target="_blank" class="btn btn-primary" style="justify-content:center;">
                   <i class="fas fa-eye"></i> View Resume
                 </a>
-                <a href="{{ asset('Meghana_Acharya_Resume.pdf') }}" download class="btn btn-outline" style="justify-content:center;">
+                <a href="{{ asset('Meghana_Acharya_Resume_2026.pdf') }}" download class="btn btn-outline" style="justify-content:center;">
                   <i class="fas fa-download"></i> Download PDF
                 </a>
               </div>
