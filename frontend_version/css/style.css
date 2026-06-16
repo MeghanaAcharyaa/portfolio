@@ -763,6 +763,10 @@ section { padding: 6rem 0; }
 }
 .contact-detail {
   display: flex; gap: 1.2rem; margin-bottom: 1.8rem;
+  align-items: flex-start;
+}
+.contact-detail > div {
+  min-width: 0;
 }
 .contact-icon {
   width: 44px; height: 44px;
@@ -772,7 +776,11 @@ section { padding: 6rem 0; }
   color: var(--accent); flex-shrink: 0;
 }
 .contact-detail h4 { font-family: var(--font-body); font-size: 0.95rem; margin-bottom: 0.2rem; }
-.contact-detail p { font-size: 0.9rem; color: var(--text-muted); }
+.contact-detail p {
+  font-size: 0.9rem; color: var(--text-muted);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 
 .contact-form {
   background: white; border: 1px solid var(--card-border);
